@@ -1,0 +1,27 @@
+<p id="comp2">
+  my-new-component-2 works !!!
+</p>
+
+<p id="p1">Red</p>
+<p id="p2">Green</p>
+<p id="p3">Blue</p>
+<p id="p4">Yellow</p>
+<p id="p5">Cerise</p>
+<h2>
+  <div id=objName> {{myobject.name}}</div>
+</h2>
+<select (change)="changemonths($event)">
+  <option *ngFor="let i of months">{{i}}</option>
+</select>
+
+<div>
+  <span *ngIf="isavailable; then condition1 else condition2">Condition is valid.</span>
+  <ng-template #condition1>
+    <app-hello-again-component></app-hello-again-component>
+  </ng-template>
+  <ng-template #condition2>Condition is invalid</ng-template>
+</div>
+
+<button (click)=" myClickFunction($event)">
+  Click Me
+</button>

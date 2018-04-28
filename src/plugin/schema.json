@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "SchematicsForMatrixPlugin",
+  "title": "Plugin Schema",
+  "type": "object",
+  "properties": {
+    "path": {
+      "type": "string",
+      "format": "path",
+      "description": "The path to create the plugin.",
+      "default": "app",
+      "visible": false
+    },
+    "sourceDir": {
+      "type": "string",
+      "format": "path",
+      "description": "The path of the source directory.",
+      "default": "src",
+      "alias": "sd",
+      "visible": false
+    },
+    "appRoot": {
+      "type": "string",
+      "format": "path",
+      "description": "The root of the application.",
+      "visible": false
+    },
+    "name": {
+      "type": "string",
+      "description": "The name of the plugin."
+    },
+    "module":  {
+      "type": "string",
+      "description": "The declaring module.",
+      "alias": "m"
+    }
+  }
+}
+  
